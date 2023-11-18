@@ -39,6 +39,16 @@
 
 .cityANDsearch .city i {
   padding-right: 10px;
+  font-size: 30px;
+  color : #20263c;
+}
+
+
+
+
+.cityANDsearch .city span {
+  font-size: 40px;
+  color: #20263c ;
 }
 
 .cityANDsearch .search i {
@@ -62,7 +72,7 @@
 
 
 .wheatherData {
-  height: 380px;
+  max-height: 380px;
   font-size: 20px;
 }
 
@@ -96,6 +106,22 @@
 
 
 
+@media screen and (max-width : 9000px) {
+  .weatherDivs {
+    overflow: scroll;
+    width: 100%;
+  }
+
+  .wheatherData {
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .weatherDivs::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 
 
 
@@ -126,7 +152,7 @@
   
   .cityANDsearch .city {
     padding: 17px;
-    font-size: 20px;
+    text-align: center;
   }
 
   .cityANDsearch span {

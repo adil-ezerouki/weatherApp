@@ -49,13 +49,13 @@ export default function Dashboard() {
     return (
 
         <div className='dashboard'>
-            <div className='cityANDsearch d-flex flex-sm-row flex-column-reverse   justify-content-between m-5 p-2 mb-4'>
+            <div className='cityANDsearch d-flex flex-md-row flex-column-reverse text-center align-content-center  justify-content-between m-5 p-2 mb-4'>
                 <div className='city'>
                     <i className="fa-solid fa-location-dot"></i>
                     <span>{Object.keys(weatherData).length > 0 ? weatherData.city.name : 'loading...'}</span>
-                    <p className='m-0'>{`${Object.keys(weatherData).length > 0 ? weatherData.city.coord.lat + ' ' + weatherData.city.coord.lon : ''}`}</p>
+                    <p className='m-0'>{`${Object.keys(weatherData).length > 0 ? "Latitue : " + weatherData.city.coord.lat +'  Longitude : ' + weatherData.city.coord.lon : ''}`}</p>
                 </div>
-                <div className='search d-flex align-content-center'>
+                <div className='search d-flex align-content-center justify-content-center '>
                     <i className="fa-solid fa-magnifying-glass align-self-center" ></i>
                     <input type='search' onChange={(e) => setSearch(e.target.value)} placeholder='search your city here' className='align-self-center' />
                     <button className='searchButton align-self-center ' onClick={performSearch}>Search</button>
