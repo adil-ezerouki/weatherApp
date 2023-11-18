@@ -10,7 +10,7 @@ export default function NavBar() {
             </div>
             <div className='refresh d-flex flex-sm-row flex-column  justify-content-between align-content-between'>
                 <i className="fa-solid fa-arrows-rotate align-self-center "></i>
-                <span className='align-self-center ms-2'>Refresh</span>
+                <span  className='align-self-center ms-2'>Refresh</span>
             </div>
         </div>
     )

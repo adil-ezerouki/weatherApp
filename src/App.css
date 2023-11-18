@@ -70,7 +70,7 @@
   padding-top: 35px ;
 }
 .weatherDiv .weatherCARD {
-  background-color: #313541;
+  background: linear-gradient(to bottom, #75737e, #20263c);
   width: 180px;
   text-align: center;
   border-radius: 8px;
@@ -84,6 +84,14 @@
 
 .weatherState i {
   font-size: 40px;
+}
+
+.searchButton {
+  background: linear-gradient(to bottom, #75737e, #20263c);
+  color: #fff;
+  padding: 7px 13px;
+  margin-left: 10px;
+  border-radius: 8px;
 }
 
 
